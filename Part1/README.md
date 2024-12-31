@@ -17,7 +17,7 @@ Working : API Gateway: Triggers the Lambda function when an HTTPS request is mad
           Process Data: Lambda processes and converts the data into JSON format .
           Return Data: the data is returned in  JSON format.
           
- Recommended practices:Use HTTPS to Ensure that API Gateway uses HTTPS instead of HTTP to encrypt data in transit and enhance security
+ Recommended practices:Use HTTPS  instead of HTTP to encrypt data in transit and enhance security
   Do Not Directly Use the S3 Bucket: Avoid exposing the S3 bucket in the API; use Lambda as an intermediary for secure access
   Use IAM  to grant permissions follow the principle of least privilege(Grant only permissions which are 
    required for the task)
