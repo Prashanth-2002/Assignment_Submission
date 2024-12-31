@@ -22,3 +22,7 @@ Apply Terraform Configuration using terraform apply to provision the resources.
 Verify Deployment: Terraform will output the API URL that can be used to invoke the Lambda function.
 https://8u5q6jl8jg.execute-api.ap-south-1.amazonaws.com/prod/list-bucket-content
 This is https link which lists contents in s3 bucket in json format
+
+Challenges i faced:
+Lambda file(lambda.zip) innitialy was not at the correct location with terraform file ,hence was getting error
+Faced permission issues in the main.tf file while provisioning AWS resources, requiring adjustments to IAM roles and policies
