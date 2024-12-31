@@ -2,7 +2,7 @@ what is HTTPS Service
 This service is a small program that lets you look at the contents of a folder (called a bucket) on AWS S3 in json format.
 
 How do you use this service?
-https://h52jmkucb8.execute-api.ap-south-1.amazonaws.com/dev 
+https://80k0ep7i79.execute-api.ap-south-1.amazonaws.com/new_stage/getFileContent 
 just paste this link in any browser,
 
 Bucket Structure:
