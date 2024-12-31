@@ -1,5 +1,5 @@
 what is HTTPS Service
-HTTPS Service-This service is a small program that lets you look at the contents of a folder (called a bucket) on AWS S3 in json format.
+This service is a small program that lets you look at the contents of a folder (called a bucket) on AWS S3 in json format.
 
 How do you use this service?
 https://h52jmkucb8.execute-api.ap-south-1.amazonaws.com/dev 
