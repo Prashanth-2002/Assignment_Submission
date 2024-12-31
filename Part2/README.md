@@ -4,7 +4,7 @@ This project focuses on provisioning AWS infrastructure using Terraform to deplo
 AWS Infrastructure
 This project utilizes the following AWS services:
 
-AWS Lambda: A serverless function that fetches data from an S3 bucket and returns it in JSON format.
+AWS Lambda: A serverless function that fetches data from an S3 bucket(info-interview-project) and returns it in JSON format.
 API Gateway: Exposes the Lambda function as an HTTPS API endpoint.
 IAM Roles & Policies: Provides the necessary permissions for the Lambda function to access the S3 bucket.
 S3 Bucket: Stores the file that Lambda fetches and processes.
