@@ -1,0 +1,20 @@
+import json
+
+def lambda_handler(event, context):
+    # Check if the request path is root ("/")
+    path = event.get("path", "/")
+
+    # If the path is "/", return the directory structure
+    if path == "/":
+        return {
+            'statusCode': 200,
+            'body': json.dumps({"content": ["dir1", "dir2", "file1.csv"]}),
+        }
+    
+    # If the path is something else, return an error or not found
+    return {
+        'statusCode': 404,
+        'body': json.dumps({"error": "Path not found"}),
+    }
+
+# this code is used for exception handling
