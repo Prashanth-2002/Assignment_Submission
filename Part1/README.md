@@ -17,12 +17,17 @@ Working : API Gateway: Triggers the Lambda function when an HTTPS request is mad
           Process Data: Lambda processes and converts the data into JSON format .
           Return Data: the data is returned in  JSON format.
           
- Recommended practices:Use HTTPS  instead of HTTP to encrypt data in transit and enhance security
-Do Not Directly Use the S3 Bucket: Avoid exposing the S3 bucket in the API; use Lambda as an intermediary for secure access
-Use IAM  to grant permissions follow the principle of least privilege(Grant only permissions which are 
-   required for the task)
-  Error Handling: Implement error handling in the Lambda function to manage exceptions such as invalid S3 file access .
-   Set an appropriate timeout for the Lambda function  ensuring it doesn't hang or timeout unexpectedly
+Use HTTPS: Always use HTTPS to encrypt data in transit and enhance security.
+Avoid Direct S3 Access: Do not expose the S3 bucket in APIs; use a Lambda function as an intermediary for secure access.
+IAM Best Practices: Grant permissions following the principle of least privilege—provide only the permissions required for the task.
+Error Handling: Implement robust error handling in Lambda to manage exceptions, such as invalid S3 file access.
+Timeout Settings: Set appropriate timeouts for Lambda functions to prevent unexpected delays or failures.
+
+Challeneges I faced:
+I had some issues in permissions,i had some difficulty to give lambda appropriate permissions to acess the s3 bucket
+ Initially, error handling was not  being implemented, but after watching some YouTube tutorials, I discovered an effective solution.
+
+   
    
    
  
