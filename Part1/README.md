@@ -13,7 +13,7 @@ info-interview-project/  (Bucket name)
 
 Working : API Gateway: Triggers the Lambda function when an HTTPS request is made.
           Lambda: Retrieves content from the  S3 bucket(info-interview-project).
-          Fetch Data from S3: Lambda fetches the file (e.g., text, CSV, JSON) from S3.
+          Fetch Data from S3: Lambda fetches the file (CSV) from S3.
           Process Data: Lambda processes and converts the data into JSON format .
           Return Data: the data is returned in  JSON format.
           
